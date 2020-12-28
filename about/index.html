@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Prime | Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://noahti.github.io/prime/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://noahti.github.io/prime/w3schools23.css"><!--Super Necessary-->
+<style>
+.w3-third a{text-decoration:none}
+.palette td{padding:10px;border-bottom:1px solid white}
+.palette {font-family:monospace;font-size:16px;border:1px solid #ccc;width:100%}
+</style>
+</head>
+<body>
+<div id="demo-h1" class="w3-row" style="background-color: rgb(149, 149, 149); color: rgb(255, 255, 255);">
+
+  <div class="w3-col l3 w3-hide-medium w3-hide-small w3-container w3-padding-16 w3-xlarge w3-opacity">
+    <i class="w3-xlarge fa fa-bars"></i>
+  </div>
+
+  <div class="w3-col l7 s12 w3-container w3-padding-16 w3-xlarge">
+  <i class="w3-xlarge fa fa-search">🔎</i>
+  
+
+    &nbsp;
+<div class="dropdown">
+  <input onclick="myFunction()" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" style="width: 80%; background-color: rgb(168, 168, 168);" class="roundbutton w3-show-inline-block">
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://noahti.github.io/prime/about">About</a>
+    <a href="https://noahti.github.io/prime/blog">Blog</a>
+    <a href="https://noahti.github.io/prime/phones">Phones</a>
+    <a href="https://noahti.github.io/prime/sd">SD Cards</a>
+    <a href="https://noahti.github.io/prime/contact">Contact</a>
+
+  </div>
+</div>
+  </div>
+
+  <div class=" w3-col l2 w3-hide-medium w3-hide-small w3-container" style="padding-top:8px">
+    <div class="w3-right">
+    <a href="https://noahti.github.io/prime"><img class="w3-circle" src="https://noahti.github.io/prime/favicon.ico" style="height:55px"></a><br>
+
+    </div>
+  </div>
+
+</div>
+
+<div id="demo-h2" class="w3-container w3-padding-32" style="background-color: rgb(187, 187, 187); color: rgb(0, 0, 0);">
+  <h2><center>Prime</center></h2>
+</div>
+
+<div class="w3-row-padding w3-section" style="margin-left:-16px;margin-right:-16px">
+
+<div class="w3-card-4">
+<div class="w3-container">
+<center>
+<h2>About</h2>
+<p>
+<p>Prime was founded by Elijah Brackett to produce SD Cards, then we came out with a phone</p>
+</p>
+</center>
+</div>
+</div>
+</div>
+        
+<div id="demo-footer" class="w3-container w3-opacity" style="background-color: rgb(149, 149, 149); color: rgb(255, 255, 255);">
+<h3><center>Copyright Prime Phone, Inc. 2020-2021 Powered by CWS</center></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+a:active,
+a:focus,
+input,
+input:active,
+input:focus {
+    outline: 0;
+    outline-style:none;
+    outline-width:0;
+}  
+
+:focus {outline:none;} ::-moz-focus-inner {border:0;}
+
+
+.roundbutton {border-radius: 8px;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(168, 168, 168);
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<!-- Search Box Function -->
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+ </body></html>
